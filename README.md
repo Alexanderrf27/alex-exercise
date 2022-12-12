@@ -69,6 +69,8 @@ Develop some tests to the rest endpoint that validate the following requests to 
 # specs
 [openapi.yaml](specs%2Fopenapi.yaml)
 
+# Coverage
+![Captura de pantalla de 2022-12-12 09-55-13.png](gen%2FCaptura%20de%20pantalla%20de%202022-12-12%2009-55-13.png)
 
 ###  Build and Run application
 []()
