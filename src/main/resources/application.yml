@@ -1,0 +1,29 @@
+spring.jmx:
+  enabled: false
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui-custom.html
+  version: 1.0.0
+spring:
+  sql:
+    init:
+      continue-on-error: true
+  h2:
+    console:
+      enabled:
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    password: alex
+    username: alex
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:sampledb
+
+
+
+
+

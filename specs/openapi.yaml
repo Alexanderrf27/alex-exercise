@@ -1,0 +1,57 @@
+openapi: "3.0.3"
+info:
+  title: "Final Price Query API for a specific product by date"
+  description: "In the company's e-commerce database we have the PRICES table that reflects the final price (pvp) and the rate that applies to a product in a chain between certain dates"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8080"
+paths:
+  /products/v1/priceLast:
+    post:
+      summary: "POST products/v1/priceLast"
+      operationId: "getPriceLast"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProductsPriceLast"
+        required: true
+      responses:
+        "201":
+          description: "Created"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ProductsPriceLastResponse"
+components:
+  schemas:
+    ProductsPriceLast:
+      type: "object"
+      properties:
+        brandId:
+          type: "integer"
+          format: "int64"
+        productId:
+          type: "integer"
+          format: "int64"
+        appDate:
+          type: "string"
+          format: "date-time"
+    ProductsPriceLastResponse:
+      type: "object"
+      properties:
+        productId:
+          type: "integer"
+          format: "int64"
+        brandId:
+          type: "integer"
+          format: "int64"
+        rateToApply:
+          type: "integer"
+          format: "int64"
+        priceApplicationDates:
+          type: "string"
+          format: "date-time"
+        finalPrice:
+          type: "number"
+          format: "int64"   

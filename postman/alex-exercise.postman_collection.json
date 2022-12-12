@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "4dd41a14-cbab-4f00-a03e-247944e4262a",
+		"name": "alex-exercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5933729"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/products/v1/priceLast",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"brandId\":1, \n    \"productId\":35455, \n    \"appDate\":\"2020-06-14T10:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products/v1/priceLast",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"v1",
+						"priceLast"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
