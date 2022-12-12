@@ -64,6 +64,7 @@ Develop some tests to the rest endpoint that validate the following requests to 
 
 
 # postman
+![Captura de pantalla de 2022-12-12 10-01-14.png](gen%2FCaptura%20de%20pantalla%20de%202022-12-12%2010-01-14.png)
 [alex-exercise.postman_collection.json](postman%2Falex-exercise.postman_collection.json)
 
 # specs
