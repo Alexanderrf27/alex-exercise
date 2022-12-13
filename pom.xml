@@ -90,7 +90,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>spring-boot-web</finalName>
+		<finalName>alex-exercise</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
