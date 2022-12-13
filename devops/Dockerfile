@@ -1,11 +1,11 @@
 #Download base image ubuntu 20.04
-FROM ubuntu:20.04
+FROM openjdk:8-jdk-alpine
 
 VOLUME /tmp
 
 EXPOSE 8080
 
-ARG JAR_FILE=target/target/*.jar
+ARG JAR_FILE=target/target/alex-exercise.jar
 
 ADD ${JAR_FILE} app.jar
 
